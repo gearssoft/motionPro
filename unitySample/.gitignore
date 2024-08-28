@@ -1,0 +1,9 @@
+Library/
+.vs/
+Logs/
+obj/
+Temp/
+Layouts/
+/Assets/TextMesh Pro*
+*.mp4
+*.mp4.meta
