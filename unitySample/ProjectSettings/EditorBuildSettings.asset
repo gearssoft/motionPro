@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/DemoTcp.unity
+    guid: ff4d8a699d2199040b4f03654436ecd1
+  - enabled: 0
+    path: Assets/Scenes/TestScene.unity
+    guid: d0d1ab89589c62340926e36e1734f1c4
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: eaff470a898821349a92ab4ac227206e, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: c2c7af40c766fb84785ed7ea0d0f59df, type: 2}
+  m_UseUCBPForAssetBundles: 0

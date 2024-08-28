@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LZ4pn</name>
+    </assembly>
+    <members>
+        <member name="T:LZ4pn.LZ4Codec">
+            <summary>Unsafe LZ4 codec.</summary>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.BlockCopy(System.Byte*,System.Byte*,System.Int32)">
+            <summary>Copies block of memory.</summary>
+            <param name="src">The source.</param>
+            <param name="dst">The destination.</param>
+            <param name="len">The length (in bytes).</param>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.BlockFill(System.Byte*,System.Int32,System.Byte)">
+            <summary>Copies block of memory.</summary>
+            <param name="dst">The destination.</param>
+            <param name="len">The length (in bytes).</param>
+            <param name="val">The value.</param>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Encode32(System.Byte*,System.Byte*,System.Int32,System.Int32)">
+            <summary>Encodes the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="output">The output.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="outputLength">Length of the output.</param>
+            <returns>Number of bytes written.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Encode32(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32)">
+            <summary>Encodes the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="output">The output.</param>
+            <param name="outputOffset">The output offset.</param>
+            <param name="outputLength">Length of the output.</param>
+            <returns>Number of bytes written.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Encode32(System.Byte[],System.Int32,System.Int32)">
+            <summary>Encodes the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <returns>Compressed buffer.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Decode32(System.Byte*,System.Int32,System.Byte*,System.Int32,System.Boolean)">
+            <summary>Decodes the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="output">The output.</param>
+            <param name="outputLength">Length of the output.</param>
+            <param name="knownOutputLength">Set it to <c>true</c> if output length is known.</param>
+            <returns>Number of bytes written.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Decode32(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>Decodes the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="output">The output.</param>
+            <param name="outputOffset">The output offset.</param>
+            <param name="outputLength">Length of the output.</param>
+            <param name="knownOutputLength">Set it to <c>true</c> if output length is known.</param>
+            <returns>Number of bytes written.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Decode32(System.Byte[],System.Int32,System.Int32,System.Int32)">
+            <summary>Decodes the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="outputLength">Length of the output.</param>
+            <returns>Decompressed buffer.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Encode64(System.Byte*,System.Byte*,System.Int32,System.Int32)">
+            <summary>Encodes the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="output">The output.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="outputLength">Length of the output.</param>
+            <returns>Number of bytes written.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Encode64(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32)">
+            <summary>Encodes the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="output">The output.</param>
+            <param name="outputOffset">The output offset.</param>
+            <param name="outputLength">Length of the output.</param>
+            <returns>Number of bytes written.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Encode64(System.Byte[],System.Int32,System.Int32)">
+            <summary>Encodes the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <returns>Compressed buffer.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Decode64(System.Byte*,System.Int32,System.Byte*,System.Int32,System.Boolean)">
+            <summary>Decodes the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="output">The output.</param>
+            <param name="outputLength">Length of the output.</param>
+            <param name="knownOutputLength">Set it to <c>true</c> if output length is known.</param>
+            <returns>Number of bytes written.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Decode64(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32,System.Boolean)">
+            <summary>Decode64s the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="output">The output.</param>
+            <param name="outputOffset">The output offset.</param>
+            <param name="outputLength">Length of the output.</param>
+            <param name="knownOutputLength">Set it to <c>true</c> if output length is known.</param>
+            <returns>Number of bytes written.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Decode64(System.Byte[],System.Int32,System.Int32,System.Int32)">
+            <summary>Decode64s the specified input.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="outputLength">Length of the output.</param>
+            <returns>Decompressed buffer.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Encode32HC(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32)">
+            <summary>Encodes the specified input using HC codec.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="output">The output.</param>
+            <param name="outputOffset">The output offset.</param>
+            <param name="outputLength">Length of the output.</param>
+            <returns>Number of bytes written. NOTE: when output buffer is too small it returns negative value.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Encode32HC(System.Byte[],System.Int32,System.Int32)">
+            <summary>Encodes the specified input using HC codec.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <returns>Buffer with compressed data (NOTE: it can be bigger than input).</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Encode64HC(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32)">
+            <summary>Encodes the specified input using HC codec.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <param name="output">The output.</param>
+            <param name="outputOffset">The output offset.</param>
+            <param name="outputLength">Length of the output.</param>
+            <returns>Number of bytes written. NOTE: when output buffer is too small it returns negative value.</returns>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.Encode64HC(System.Byte[],System.Int32,System.Int32)">
+            <summary>Encodes the specified input using HC codec.</summary>
+            <param name="input">The input.</param>
+            <param name="inputOffset">The input offset.</param>
+            <param name="inputLength">Length of the input.</param>
+            <returns>Buffer with compressed data (NOTE: it can be bigger than input).</returns>
+        </member>
+        <member name="F:LZ4pn.LZ4Codec.MEMORY_USAGE">
+            <summary>
+            Memory usage formula : N->2^N Bytes (examples : 10 -> 1KB; 12 -> 4KB ; 16 -> 64KB; 20 -> 1MB; etc.)
+            Increasing memory usage improves compression ratio
+            Reduced memory usage can improve speed, due to cache effect
+            Default value is 14, for 16KB, which nicely fits into Intel x86 L1 cache
+            </summary>
+        </member>
+        <member name="F:LZ4pn.LZ4Codec.NOTCOMPRESSIBLE_DETECTIONLEVEL">
+            <summary>
+            Decreasing this value will make the algorithm skip faster data segments considered "incompressible"
+            This may decrease compression ratio dramatically, but will be faster on incompressible data
+            Increasing this value will make the algorithm search more before declaring a segment "incompressible"
+            This could improve compression a bit, but will be slower on incompressible data
+            The default value (6) is recommended
+            </summary>
+        </member>
+        <member name="M:LZ4pn.LZ4Codec.MaximumOutputLength(System.Int32)">
+            <summary>Gets maximum the length of the output.</summary>
+            <param name="inputLength">Length of the input.</param>
+            <returns>Maximum number of bytes needed for compressed buffer.</returns>
+        </member>
+    </members>
+</doc>

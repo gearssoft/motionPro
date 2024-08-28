@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>lz4net.netcore.signed</id>
+    <version>1.0.15.93</version>
+    <title>lz4net.netcore.signed</title>
+    <authors>Milosz Krajewski</authors>
+    <owners>Milosz Krajewski</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/MiloszKrajewski/lz4net/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/MiloszKrajewski/lz4net</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/MiloszKrajewski/lz4net/master/doc/icon.png</iconUrl>
+    <description>LZ4 is lossless compression algorithm, sacrificing compression ratio for compression/decompression speed. Its compression speed is ~400 MB/s per core while decompression speed reaches ~2 GB/s, not far from RAM speed limits.</description>
+    <copyright>Copyright 2017 Milosz Krajewski</copyright>
+    <tags>lz4 lz4hc fast compression decompression zlib lzf lzo snappy quicklz</tags>
+    <repository type="git" url="https://github.com/MiloszKrajewski/lz4net" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="lz4net.unsafe.netcore.signed" version="1.0.15.93" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

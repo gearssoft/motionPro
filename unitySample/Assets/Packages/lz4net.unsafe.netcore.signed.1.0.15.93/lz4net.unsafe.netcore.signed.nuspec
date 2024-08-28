@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>lz4net.unsafe.netcore.signed</id>
+    <version>1.0.15.93</version>
+    <title>lz4net.unsafe.netcore.signed</title>
+    <authors>Milosz Krajewski</authors>
+    <owners>Milosz Krajewski</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/MiloszKrajewski/lz4net/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/MiloszKrajewski/lz4net</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/MiloszKrajewski/lz4net/master/doc/icon.png</iconUrl>
+    <description>This packages is not usable on its own. Please use https://www.nuget.org/packages/lz4net.netcore.signed/ instead.</description>
+    <copyright>Copyright 2017 Milosz Krajewski</copyright>
+    <tags>lz4 lz4hc fast compression decompression zlib lzf lzo snappy quicklz</tags>
+    <repository type="git" url="https://github.com/MiloszKrajewski/lz4net" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>
